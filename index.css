@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Edição Conteúdo */
+h1, h3, h4 {
+    font-family: 'Grandstander', cursive;
+}
+h3, h4 {
+    color:blueviolet;
+}
+hr {
+    margin-top: 25px;
+}
+ol {
+    list-style: lower-alpha;
+}
+li {
+    padding: 2px 4px;
+}
+
+/* Edição Questões */
+.codigo {
+    display: inline-block;
+    background-color: #f7f7f7;
+    padding: 10px 30px;
+}
+.button-resolucao-1, .button-resolucao-2 {
+    display: block;
+    margin: 15px;
+}

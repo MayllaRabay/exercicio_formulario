@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Front-End</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Grandstander&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Exercício Formulários - Front-End</h1>
+    <h3>Questão 01:</h3>
+    <p>No formulário abaixo, clicar no texto auxiliar do campo de texto (“Nome”, “E-mail”, “Telefone de contato”)
+        deveria
+        dar <strong>foco</strong> ao respectivo campo, mas isso não está acontecendo. Altere o código abaixo para que esse problema seja
+        corrigido.</p>
+    <div class="codigo">
+        <pre>
+&ltform&gt
+    &ltdiv&gt
+        Nome
+        &ltinput name="name"&gt
+    &lt/div&gt
+    &ltdiv&gt
+        E-mail
+        &ltinput name="email"&gt
+    &lt/div&gt
+    &ltdiv&gt
+        Telefone de contato
+        &ltinput name="tel"&gt
+            
+        &ltbutton id="modal"&gt
+            Saiba mais sobre porque pedimos telefone
+        &lt/button&gt
+    &lt/div&gt
+        
+    &ltbutton&gtEnviar&lt/button&gt
+&lt/form&gt
+        </pre>
+    </div>
+    <button class="button-resolucao-1">Ver resolução:</button>
+    <div class="spoiler-resolucao-1" hidden>
+        <form>
+            <label>
+                Nome
+                <input name="name">
+            </label>
+            <label>
+                E-mail
+                <input name="email">
+            </label>
+            <label>
+                Telefone de contato
+                <input name="tel">
+    
+                <button id="modal">
+                    Saiba mais sobre porque pedimos telefone
+                </button>
+            </label>
+    
+            <button>Enviar</button>
+        </form>
+        <p>Apenas substitua <strong>div</strong> por <strong>label</strong>.</p>
+    </div>
+    
+    <hr>
+    <h3>Questão 02:</h3>
+    <p>Ainda no formulário da questão anterior, o botão com id “modal” está <strong>enviando</strong> o formulário ao ser clicado, mas
+        não
+        deveria. Altere o código novamente para corrigir este problema.</p>
+    <button class="button-resolucao-2">Ver resolução:</button>
+    <div class="spoiler-resolucao-2" hidden>
+        <form>
+            <label>
+                Nome
+                <input name="name">
+            </label>
+            <label>
+                E-mail
+                <input name="email">
+            </label>
+            <label>
+                Telefone de contato
+                <input name="tel">
+    
+                <button id="modal" type="button">
+                    Saiba mais sobre porque pedimos telefone
+                </button>
+            </label>
+    
+            <button>Enviar</button>
+        </form>
+        <p>Apenas inclua no &ltbutton&gt <strong>type="button"</strong>.</p>
+    </div>
+
+    <hr>
+    <h3>Questão 3:</h3>
+    <p>Escolha com sabedoria! Crie um novo arquivo HTML e, para cada uma das opções abaixo, crie uma nova tag &ltinput> e
+        escolha um dos métodos de entrada ensinados em aula (select, textarea ou input). Além disso, não se esqueça de
+        usar o type e o inputmode mais apropriados, quando aplicável.</p>
+<ol>
+    <li>Nome completo</li>
+    <li>E-mail</li>
+    <li>Senha</li>
+    <li>Nome de usuário</li>
+    <li>Link do seu LinkedIn</li>
+    <li>Telefone de contato</li>
+    <li>CPF</li>
+    <li>Endereço</li>
+    <li>Cidade</li>
+    <li>Estado</li>
+    <li>Bairro</li>
+    <li>Número da residência</li>
+    <li>CEP</li>
+    <li>Aceita os termos de uso?</li>
+    <li>Mensagem em formulário de contato</li>
+    <li>Como ficou sabendo dessa oportunidade? (Instagram, e-mail, LinkedIn, Facebook, outros)</li>
+    <li>Observações de pedido (app de delivery)</li>
+</ol>
+</body>
+<script src="index.js"></script>
+</html>
